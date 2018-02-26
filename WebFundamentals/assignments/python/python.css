@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	background-color: gray;
+    width: 970px;
+    height: 1000px;
+    margin-left: 100px;
+}
+#uppersec {
+	background-color: #245076;
+	height: 450px;
+}
+
+#header{
+
+
+}
+
+#logo {
+    height: 110px;
+    width: 360px;
+    display: inline-block;
+}
+
+#headertext {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 400px;
+}
+
+#search {
+	background-color: gray;
+	height: 40px;
+	width: 200px;
+	border-radius:5px;
+}
+
+input {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.yellowlink {
+	color: yellow;
+	vertical-align: top;
+}
+
+#navbar {
+border-radius: 5px;
+background: linear-gradient(#3877ad, #497fad, #3877ad);
+margin: 0px 50px;
+}
+
+#navbar h3{
+	display: inline-block;
+    color: white;
+    margin: 15px 15px 15px 45px;}
+
+#upperbottomsec {
+
+}
+
+#unlist1{
+	display: inline-block;
+    vertical-align: top;
+}
+
+#unlist1 ul{
+ display: inline-block;
+ margin: 30px 100px;
+ list-style: none;
+}
+
+#unlist1 ul li{
+	text-align: center;
+}
+
+#unlist1 li:before{
+	content: "\00BB"  ;
+}
+
+.unlist1li{
+color: white;
+}
+
+#briefquotesec {
+	display: inline-block;
+    width: 500px;
+}
+
+#brief {
+	display: block;
+	vertical-align: top;
+	width: 500px;
+	padding: 20px;
+	text-align: center;	
+
+}
+
+
+#quotesec {
+	text-align: center;
+}
+
+.quote {
+	display: block;
+	color: yellow;
+}
+
+
+/*#container {
+    background-color: #fcfefd;
+    height: 1900px;
+    width: 1300px;
+    margin-left: 50px;
+    padding: 20px;
+}*/

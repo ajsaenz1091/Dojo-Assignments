@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>landing pages</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='')}}">
+</head>
+<body>
+	<h1>I love dojos</h1>
+      <h3>Become a ninja</h3>
+      
+     	<form action="/result" method="post" id="dojoform">
+     		Name: <input type="text" name="name"><br>
+     		Dojo Location:  
+     		<select name="location">
+			    <option value="San Jose">San Jose</option>
+			    <option value="Seattle">Seattle</option>
+			    <option value="Houston">Houston</option>
+			    <option value="Chicago">Chicago</option>
+ 			 </select><br>
+ 			 Favorite Language:
+     		 <select name="language">
+			    <option value="Python">Python</option>
+			    <option value="C++">C++</option>
+			    <option value="JS">JS</option>
+			    <option value="ruby">Ruby</option>
+ 			 </select><br>
+ 			 Comment:<br>
+ 			 <textarea rows="4" cols="50" name="comment" form="dojoform"></textarea>
+ 			 <input type="submit" value="submit">
+     	</form>
+</body>
+</html>

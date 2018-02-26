@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	background-color: #062134;
+    width: 970px;
+    height: 1000px;
+    margin-left: 100px;
+}
+
+.font{
+	font-family: arial;
+}
+
+#header h1{
+	margin: 15px 0px 0px 15px;
+	padding-right: 20px;
+}
+
+#header h4{
+	margin-left: 50px;
+}
+
+.menu1{
+	display: inline-block;
+}
+
+.bluetext {
+	color: #1a95e3;
+}
+
+.whitetext {
+	color: white;
+}
+
+#container2{
+	width: 950px;
+    height: 893px;
+    margin: 10px;
+    background-color: white;
+}
+
+#main_img {
+	height: 360px;
+	width: 920px;
+	margin: 15px
+}
+
+.infobox {
+    height: 250px;
+    width: 274px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #1468a8;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.icon {
+	height: 50px;
+    width: 50px;
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+}
+
+.tool{
+	width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.toolheader{
+	display: inline-block;
+	position: relative;
+    bottom: 25px;
+    left: 5px;
+}
+
+#container2-1{
+	position: relative;
+    right: 5px;
+}
+
+.infoboxtext{
+	width: 250px;
+	height: 100px;
+	
+}
+
+}
+.bottombox{
+	height: 196px;
+    width: 274px;
+    display: inline-block;
+    padding: 9px;
+    background-color: white;
+    margin-left: 15px;
+    border: 1px solid black;
+    position: relative;
+    left: 5px;
+    vertical-align: top;
+}
+
+#learn{
+	display: inline-block;
+}
+.moreinfo{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 32px;
+    margin-top: 30px;
+    background-color: blue;
+}
+
+#building{
+    height: 170px;
+    width: 270px;
+}
+
+.font-size{
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.learn-text{
+	font-size: 12px;
+}

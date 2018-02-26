@@ -1,0 +1,12 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#container{
+	background: #245076;
+	height: 970px;
+	width: 810px;
+	margin-left: 200px;
+	padding: 20px;
+}
