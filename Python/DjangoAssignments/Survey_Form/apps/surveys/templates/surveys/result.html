@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Results</title>
+</head>
+<body>
+	<p>Thanks for submitting this form! You have submitted this form {{request.session.number}} times now!</p>
+	<h4>Submitted information</h4>
+	<p>Name: {{name}}</p>
+	<p>Dojo Location: {{dojoLocation}}</p>
+	<p>Favorite language: {{favLang}}</p>
+	<p>Comment: {{comments}}</p>
+	<button onclick="goBack()">Go Back</button>
+
+	<script>
+	function goBack() {
+	    window.history.back();
+}
+</script>
+</body>
+</html>

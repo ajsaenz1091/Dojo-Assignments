@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Times</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'times/css/style.css' %}">
+</head>
+<body>
+<h1>The current time and date</h1>
+<div class='container'>
+    {% if datetime %}
+        <p>{{datetime}}</p>
+    {% endif %}
+</div>
+</body>
+</html>
