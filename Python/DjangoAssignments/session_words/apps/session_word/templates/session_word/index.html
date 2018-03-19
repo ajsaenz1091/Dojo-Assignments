@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'wordplay/style.css' %}">
+    <title>Session Words</title>
+</head>
+<body>
+    <div class="input_container">
+        <form action='/process' method='POST'>
+            {% csrf_token %}
+            <h2>Add a new word</h2>
+            <input type="text" name="new_word">
+
+            <p>Choose color</p>
+            <input type="radio" name="chosen_color" id="red" value="red" >
+            <label for="red">red</label>
+            <input type="radio" name="chosen_color" id="Green" value="green">
+            <label for="green">green</label>
+            <input type="radio" name="chosen_color" id="Blue" value="blue">
+            <label for="blue">blue</label><br>
+
+            <input type="checkbox" name="font" value="big" id="big">
+            <label for="big">show in BIG fonts!</label>
+
+            <input type="submit" value="Add to Session">
+        </form>
+    </div>
+    <div class="results_container">
+        <a href="/clear"><button type="reset" value="Reset">Clear</button></a>
+        <div class="results" >
+        	{% for  w in request.session.word_list %}
+        		<p><p style="color:{{w.color}}; font-size:{{w.font}}px">{{w.text}}<p>- added on {{w.Datetime}}</p></p></p>
+        	{% endfor %}
+        </div>
+    </div>
+</body>
+</html>

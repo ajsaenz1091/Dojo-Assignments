@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -36,5 +36,48 @@
                 </p>
                 <input type="submit" class="btn btn-default" value="Submit">
             </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'wordplay/style.css' %}">
+    <title>Session Words</title>
+</head>
+<body>
+    <div class="input_container">
+        <form action='/process' method='POST'>
+            {% csrf_token %}
+            <h2>Add a new word</h2>
+            <input type="text" name="new_word">
+
+            <p>Choose color</p>
+            <input type="radio" name="chosen_color" id="red" value="red" >
+            <label for="red">Red</label>
+            <input type="radio" name="chosen_color" id="Green" value="green">
+            <label for="green">Green</label>
+            <input type="radio" name="chosen_color" id="Blue" value="blue">
+            <label for="blue">Blue</label><br>
+
+            <input type="checkbox" name="font" value="big" id="big">
+            <label for="big">show in BIG fonts!</label>
+
+            <input type="submit" value="Add to Session">
+        </form>
+    </div>
+    <div class="results_container">
+        <form action='/clear'>
+            {% csrf_token %}
+            <input type="submit" value="Clear Session">
+        </form>
+        <div class="results">
+            {% for new_word in request.session.word reversed %}
+                <p style="color: {{new_word.color }}; font-size: {{new_word.size}}px;">{{ new_word.word }}</p><p>added on {{ new_word.time }}</p></br>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 </html>

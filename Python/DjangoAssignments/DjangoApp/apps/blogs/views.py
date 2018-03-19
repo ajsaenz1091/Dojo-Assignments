@@ -19,3 +19,9 @@ def edit(request, number):
 def delete(request, number):
 	print number
 	return HttpResponse("Delete" + number)
+def blogs(request):
+	return HttpResponse('placeholder to later display all the list of blogs')
+def surveys(request):
+	return HttpResponse('placeholder to display all the surveys created')
+def register(request):
+	return HttpResponse('placeholder for users to create a new user word')

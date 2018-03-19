@@ -5,7 +5,7 @@ from django.shortcuts import render,HttpResponse, redirect
 
 
 def index(request):
-	if 'couter' not in request.session:
+	if 'number' not in request.session:
 		request.session['number']=0
 
 	return render(request,'surveys/index.html')
