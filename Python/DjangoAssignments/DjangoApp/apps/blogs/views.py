@@ -17,3 +17,4 @@ def edit(request, number):
 	return HttpResponse("placeholder to edit blog"+ number)
 def destroy(request, number):
 	return redirect('/blogs')
+

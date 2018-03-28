@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+    {% load static %}
+    <link rel="stylesheet" href="" media="screen" title="no title"  charset="utf-8">
+   </head>
+    <body>
+      <div id="wrapper">
+        <div id="header">
+          <span id="greeting">Welcome, user first name!</span>
+          <p><a href="/books/addbook">Add Book and Review</a></p>
+          <p><a href="/logout">Logout</a></p> 
+        </div>
+        <div id="recent_reviews">
+          <h2>Recent Book Reviews:</h2>
+            <div id="recent_list">
+                <div class="book">
+                  <a href="{{ book.id }}">book title</a>
+                      <p>Rating:
+                        <a href="destroy/{{review.id}}">Delete</a></p>
+                      <p><a href="user/{{review.user.id}}">{{review.user.first_name}}</a> says: {{review.content}}</p>
+                </div>
+          </div>
+
+        </div>
+        <div id="booklist_box">
+          <h2>Other Books with Reviews:</h2>
+          <div id="book_list">
+                <div class="book">
+                  <a href="{{ book.id }}">book title</a>
+                </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 from django.conf.urls import url
-from . import views           # This line is new!
+from . import views
 
 urlpatterns = [
 	url(r'^$', views.surveys),
 	url(r'^new$', views.new),
-  ]
+]

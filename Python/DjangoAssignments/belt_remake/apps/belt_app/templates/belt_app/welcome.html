@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quotes Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<p><a href="/logout">Logout</a></p>
+	<h2>Welcome {name of person who just logged in}</h2>
+
+	<h4>Quotable Quotes</h4>
+
+	<div id="all_quotes" style="height:200px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+		<div class="quote_box">
+			<p>here goes a for loop to add a new quote to the list of all quotes</p>
+			<h6>Posted by:<a href="/belt_app/posts">{name of user who posted it}</a></h6>
+			<input type="submit" name="submmit" value="Add to My List">
+		</div>
+		
+	</div>
+
+	<h4>Your Favorites</h4>
+	<div id="fav_quotes" style="height:200px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+		<div class="quote_box">
+			<p>added quote</p>
+			<h6>Posted by:<a href="/belt_app/posts">{name of user who posted it}</a></h6>
+			<input type="submit" name="submmit" value="Remove from my list">
+		</div>
+	<div id="new_qoute" >
+		<form action="/belt_app/quote" >
+			{% csrf_token %}
+			<p>Quoted by:<input type="text" name="name" value=""></p><br>
+			<textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+
+		</form>
+	</div>	
+	</div>
+</body>
+</html>

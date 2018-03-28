@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="witdth=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+	<form>
+		<p>First Name: <input type="txt" name="first_name" value=""></p>
+		<p>Last Name: <input type="txt" name="last_name" value=""></p>
+		<p>Email: <input type="txt" name="email" value=""></p>
+		<p>Password: <input type="txt" name="password" value=""></p>
+		<p>Confirm Password: <input type="txt" name="confirm" value=""></p>
+	</form>
+</body>
+</html>	
